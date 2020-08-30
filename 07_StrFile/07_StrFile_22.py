@@ -12,13 +12,7 @@ for idx, e in enumerate(q):
 p.sort()
 q.sort()
 
-if len(p) != len(q):
+if p != q:
     print('NO')
-    exit()
-
-for idx in range(len(p)):
-    if p[idx] != q[idx]:
-        print('NO')
-        exit()
-
-print('YES')
+else:
+    print('YES')
