@@ -46,19 +46,15 @@ for i in range(0, 9):
         for data in frame[i]:
             score[i] += int(data)
 
-if len(frame[9]) == 2:
-    for data in frame[9]:
-        score[i] += int(data)
-else:
-    prev = 0
-    for data in frame[9]:
-        if data == 'X':
-            score[9] += 10
-        elif data == '/':
-            score[9] += 10 - prev
-        else:
-            score[9] += int(data)
-            prev = int(data)
+prev = 0
+for data in frame[9]:
+    if data == 'X':
+        score[9] += 10
+    elif data == '/':
+        score[9] += 10 - prev
+    else:
+        score[9] += int(data)
+        prev = int(data)
 
 if 1 <= question <= 10:
     print(score[question - 1])
