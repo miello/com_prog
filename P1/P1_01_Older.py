@@ -3,6 +3,7 @@ month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August
 p = input().split()
 p[2] = int(p[2].strip(','))
 p[3] = int(p[3])
+
 q = input().split()
 q[3] = int(q[3])
 q[2] = int(q[2].strip(','))
